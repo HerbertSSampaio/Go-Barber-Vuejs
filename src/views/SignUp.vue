@@ -1,35 +1,35 @@
 <template>
-	<div class="home">
+	<div class="SignUp">
 		<v-container class="pa-0" fluid>
 			<v-row no-gutters>
+				<v-col
+					cols="12"
+					md="8"
+				>
+					<div class="background-sign-up-image" />
+				</v-col>
 				<v-col
 					cols="12"
 					sm="12"
 					md="4"
 				>
-					<v-card class="pa-12 d-flex flex-column justify-space-around background-sign-in-color">
+					<v-card class="pa-12 d-flex flex-column justify-space-around background-sign-up-color">
 						<v-img
 							src="../assets/logo.svg"
 							max-height="150"
 							max-width="250"
 						/>
 						<h1 class="font-weight-bold">
-							Faça seu login
+							Cadastre-se
 						</h1>
-						<FormLogIn />
-						<a class="orange--text">
-							<v-icon class="orange--text">
-								mdi-logout
+						<FormSignUp />
+						<a class="white--text">
+							<v-icon class="white--text">
+								mdi-arrow-left-bold
 							</v-icon>
-							Criar conta
+							Voltar para o login
 						</a>
 					</v-card>
-				</v-col>
-				<v-col
-					cols="12"
-					md="8"
-				>
-					<div class="background-sign-in-image" />
 				</v-col>
 			</v-row>
 		</v-container>
@@ -38,25 +38,25 @@
 
 <script>
 // @ is an alias to /src
-	import FormLogIn from '@/components/FormLogIn.vue';
+	import FormSignUp from '@/components/FormSignUp.vue';
 
 	export default {
-		name: 'Home',
+		name: 'SignUp',
 		components: {
-			FormLogIn,
+			FormSignUp,
 		},
 	};
 </script>
 
 <style scoped>
-	.background-sign-in-color {
+	.background-sign-up-color {
 		background-color: #312E38 !important;
 		height: 100%;
 		align-items: center;
 	}
 
-	.background-sign-in-image {
-		background: url('../assets/sign-in-background.png');
+	.background-sign-up-image {
+		background: url('../assets/sign-up-background.png');
 		background-size: cover;
 		height: 100vh;
 	}
