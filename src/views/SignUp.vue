@@ -23,12 +23,14 @@
 							Cadastre-se
 						</h1>
 						<FormSignUp />
-						<a class="white--text">
-							<v-icon class="white--text">
-								mdi-arrow-left-bold
-							</v-icon>
-							Voltar para o login
-						</a>
+						<router-link class="text-decoration-none" to="/">
+							<a class="white--text">
+								<v-icon class="white--text">
+									mdi-arrow-left-bold
+								</v-icon>
+								Voltar para o login
+							</a>
+						</router-link>
 					</v-card>
 				</v-col>
 			</v-row>

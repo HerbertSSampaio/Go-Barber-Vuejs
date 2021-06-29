@@ -17,12 +17,14 @@
 							Faça seu login
 						</h1>
 						<FormLogIn />
-						<a class="orange--text">
-							<v-icon class="orange--text">
-								mdi-logout
-							</v-icon>
-							Criar conta
-						</a>
+						<router-link class="text-decoration-none" to="/SignUp">
+							<a class="orange--text">
+								<v-icon class="orange--text">
+									mdi-logout
+								</v-icon>
+								Criar conta
+							</a>
+						</router-link>
 					</v-card>
 				</v-col>
 				<v-col
