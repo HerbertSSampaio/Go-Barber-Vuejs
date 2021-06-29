@@ -1,35 +1,36 @@
 <template>
-	<v-container>
-		<v-row class="text-center justify-center align-center">
-			<v-form
-				ref="form"
-				v-model="valid"
-				lazy-validation
-			>
-				<v-text-field
-					v-model="email"
-					:rules="emailRules"
-					label="E-mail"
-					required
-				/>
-				<v-text-field
-					v-model="password"
-					label="Senha"
-					:rules="passwordRules"
-					type="password"
-					required
-				/>
-				<v-btn
-					:disabled="!valid"
-					color="success"
-					class="mr-4"
-					@click="validate"
-				>
-					Entrar
-				</v-btn>
-			</v-form>
-		</v-row>
-	</v-container>
+	<v-form
+		ref="form"
+		v-model="valid"
+		lazy-validation
+	>
+		<v-text-field
+			v-model="email"
+			:rules="emailRules"
+			label="E-mail"
+			required
+		/>
+		<v-text-field
+			v-model="password"
+			label="Senha"
+			:rules="passwordRules"
+			class="mb-4"
+			type="password"
+			required
+		/>
+		<v-btn
+			:disabled="!valid"
+			class="orange mb-4 px-16 py-6 black--text font-weight-bold"
+			@click="validate"
+		>
+			Entrar
+		</v-btn>
+		<v-container>
+			<a class="white--text">
+				Esqueci minha senha
+			</a>
+		</v-container>
+	</v-form>
 </template>
 <script>
 	export default {
