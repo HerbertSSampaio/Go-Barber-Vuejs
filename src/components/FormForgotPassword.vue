@@ -10,28 +10,13 @@
 			label="E-mail"
 			required
 		/>
-		<v-text-field
-			v-model="password"
-			label="Senha"
-			:rules="passwordRules"
-			class="mb-4"
-			type="password"
-			required
-		/>
 		<v-btn
 			:disabled="!valid"
 			class="orange mb-4 px-16 py-6 black--text font-weight-bold"
 			@click="validate"
 		>
-			Entrar
+			Recuperar
 		</v-btn>
-		<v-container>
-			<router-link class="text-decoration-none" to="/ForgotPassword">
-				<a class="white--text">
-					Esqueci minha senha
-				</a>
-			</router-link>
-		</v-container>
 	</v-form>
 </template>
 <script>
