@@ -29,7 +29,7 @@
 			class="orange mb-4 px-16 py-6 black--text font-weight-bold"
 			@click="validate"
 		>
-			Entrar
+			Cadastrar
 		</v-btn>
 	</v-form>
 </template>
